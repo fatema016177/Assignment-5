@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>qna</title>
+  <!--------- Tailwind CSS CDN --------->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--------- DaisyUi CDN --------->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!--------- font awesome CDN --------->
+  <script src="https://kit.fontawesome.com/2dfea4e8cc.js" crossorigin="anonymous"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    .font {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-300 font">
+ 
+  <section class="w-full mx-auto p-5">
+    <header class="flex items-center justify-between bg-white p-7 rounded-lg">
+      <div class="flex justify-center items-center gap-x-1">
+        <img src="./assets/logo.png" alt="">
+        <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <div class="flex items-center gap-x-10">
+        <button id="back-desk" class="btn btn-primary">Back To Desk</button>
+      </div>
+    </header>
+  </section>
+  <section class="w-full mx-auto p-5">
+    <div class="collapse bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title font-semibold">What are the different ways to select an element in the DOM?</div>
+      <div class="collapse-content text-md"><hr class="mb-3">ডম এলিমেন্ট সিলেক্ট করার অনেকগুলা পদ্বতি আছে তার মধ্যে হচ্ছে getElementsByTagName() getElementById() getElementsByClassName() querySelector() querySelectorAll()</div>
+    </div>
+    <div class="collapse bg-base-100 border border-base-300 mt-5">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title font-semibold">What is the difference between innerHTML, innerText, and textContent ?</div>
+      <div class="collapse-content text-md"><hr class="mb-3">innerHTML দিয়ে একটা ডিভ এর ভিতর যতগুলা এলিমেন্ট আছে সব গুলার html tag সহ পাওয়া যায় , innerText দিয়ে শুধু মাত্র ভিতরের টেক্সট পাওয়া যায় । আর textContent দিয়ে একটা ডিভের ভিতর যতগুলা টেক্সট আছে সব দেয় শুধু html ট্যাগ আর কোনো স্টাইল সম্পর্কিত কোড ছাড়া </div>
+    </div>
+    <div class="collapse bg-base-100 border border-base-300 mt-5">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title font-semibold">What is event delegation in the DOM?</div>
+      <div class="collapse-content text-md"><hr class="mb-3">Event Delegation হলো একধরনের ইভেন্ট হ্যান্ডলিং, যেখানে কোনো চাইল্ড এলিমেন্টের বদলে তার প্যারেন্ট এলিমেন্টে ইভেন্ট লিসেনার সেট করা হয়। এতে করে ডাইনামিকভাবে নতুন এলিমেন্ট যোগ হলেও ইভেন্ট ঠিকভাবে কাজ করে।</div>
+    </div>
+    <div class="collapse bg-base-100 border border-base-300 mt-5">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title font-semibold">What is event bubbling in the DOM?</div>
+      <div class="collapse-content text-md"><hr class="mb-3">Event Bubbling হলো একটি ইভেন্ট প্রোপাগেশন মেকানিজম, যেখানে একটি ইভেন্ট প্রথমে যেই এলিমেন্ট এ ক্লিক করা হয় তা ঘটে এবং তারপর তা ধাপে ধাপে তার প্যারেন্ট ও উপরের এলিমেন্টগুলোতে ছড়িয়ে যায়।</div>
+    </div>
+    <div class="collapse bg-base-100 border border-base-300 mt-5">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title font-semibold"> How do you create, add, and remove elements using JavaScript?></div>
+      <div class="collapse-content text-md"><hr class="mb-3">যদি আমরা কোনো এলিমেন্ট ক্রিয়েট করতে যাই তাহলে আমাদের লিখতে হবে document.createElement('এইখানে যেই এলিমেন্ট ক্রিয়েট করতে চাই অইটার ট্যাগ দিতে হবে') । আর যদি কোনো কিছু এড করতে চাই তাহলে আমরা appendChild()দিয়েও করতে পারি । আর যদি কোনো কিছু রিমুভ করতে চাই তাহলে remove(), removeChild() এই মেথড গুলা ইউস করতে পারি</div>
+    </div>
+
+  </section>
+  
+  <script src="qna.js"></script>
+  <script src="java.js"></script>
+</body>
+
+</html>
