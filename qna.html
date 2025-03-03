@@ -42,27 +42,27 @@
     <div class="collapse bg-base-100 border border-base-300">
       <input type="radio" name="my-accordion-1" checked="checked" />
       <div class="collapse-title font-semibold">What are the different ways to select an element in the DOM?</div>
-      <div class="collapse-content text-md"><hr class="mb-3">ডম এলিমেন্ট সিলেক্ট করার অনেকগুলা পদ্বতি আছে তার মধ্যে হচ্ছে getElementsByTagName() getElementById() getElementsByClassName() querySelector() querySelectorAll()</div>
+      <div class="collapse-content text-md"><hr class="mb-3">There are several methods to select dom elements including getElementsByTagName() getElementById() getElementsByClassName() querySelector() querySelectorAll()</div>
     </div>
     <div class="collapse bg-base-100 border border-base-300 mt-5">
       <input type="radio" name="my-accordion-1" checked="checked" />
       <div class="collapse-title font-semibold">What is the difference between innerHTML, innerText, and textContent ?</div>
-      <div class="collapse-content text-md"><hr class="mb-3">innerHTML দিয়ে একটা ডিভ এর ভিতর যতগুলা এলিমেন্ট আছে সব গুলার html tag সহ পাওয়া যায় , innerText দিয়ে শুধু মাত্র ভিতরের টেক্সট পাওয়া যায় । আর textContent দিয়ে একটা ডিভের ভিতর যতগুলা টেক্সট আছে সব দেয় শুধু html ট্যাগ আর কোনো স্টাইল সম্পর্কিত কোড ছাড়া </div>
+      <div class="collapse-content text-md"><hr class="mb-3">innerHTML All the elements inside a div can be found with html tags, innerText can only find the inner text. And textContent gives all the text inside a div only without html tags and any style related code</div>
     </div>
     <div class="collapse bg-base-100 border border-base-300 mt-5">
       <input type="radio" name="my-accordion-1" checked="checked" />
       <div class="collapse-title font-semibold">What is event delegation in the DOM?</div>
-      <div class="collapse-content text-md"><hr class="mb-3">Event Delegation হলো একধরনের ইভেন্ট হ্যান্ডলিং, যেখানে কোনো চাইল্ড এলিমেন্টের বদলে তার প্যারেন্ট এলিমেন্টে ইভেন্ট লিসেনার সেট করা হয়। এতে করে ডাইনামিকভাবে নতুন এলিমেন্ট যোগ হলেও ইভেন্ট ঠিকভাবে কাজ করে।</div>
+      <div class="collapse-content text-md"><hr class="mb-3">Event Delegation is a form of event handling, where an event listener is set on its parent element instead of a child element. This makes the event work correctly even though new elements are added dynamically.</div>
     </div>
     <div class="collapse bg-base-100 border border-base-300 mt-5">
       <input type="radio" name="my-accordion-1" checked="checked" />
       <div class="collapse-title font-semibold">What is event bubbling in the DOM?</div>
-      <div class="collapse-content text-md"><hr class="mb-3">Event Bubbling হলো একটি ইভেন্ট প্রোপাগেশন মেকানিজম, যেখানে একটি ইভেন্ট প্রথমে যেই এলিমেন্ট এ ক্লিক করা হয় তা ঘটে এবং তারপর তা ধাপে ধাপে তার প্যারেন্ট ও উপরের এলিমেন্টগুলোতে ছড়িয়ে যায়।</div>
+      <div class="collapse-content text-md"><hr class="mb-3">Event Bubbling is an event propagation mechanism, where an event first occurs on the element that is clicked and then propagates step by step to its parent and upper elements.</div>
     </div>
     <div class="collapse bg-base-100 border border-base-300 mt-5">
       <input type="radio" name="my-accordion-1" checked="checked" />
       <div class="collapse-title font-semibold"> How do you create, add, and remove elements using JavaScript?></div>
-      <div class="collapse-content text-md"><hr class="mb-3">যদি আমরা কোনো এলিমেন্ট ক্রিয়েট করতে যাই তাহলে আমাদের লিখতে হবে document.createElement('এইখানে যেই এলিমেন্ট ক্রিয়েট করতে চাই অইটার ট্যাগ দিতে হবে') । আর যদি কোনো কিছু এড করতে চাই তাহলে আমরা appendChild()দিয়েও করতে পারি । আর যদি কোনো কিছু রিমুভ করতে চাই তাহলে remove(), removeChild() এই মেথড গুলা ইউস করতে পারি</div>
+      <div class="collapse-content text-md"><hr class="mb-3">If we are going to create an element then we have to write document.createElement('Here we have to give the outer tag of the element we want to create'). And if we want to add something then we can do it with appendChild(). And if we want to remove something, we can use remove(), removeChild() methods</div>
     </div>
 
   </section>
